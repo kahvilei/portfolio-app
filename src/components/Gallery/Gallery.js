@@ -28,7 +28,7 @@ class galleryItem extends Component{
        }
     render(){
         return(
-        <div className = "gallery-item">
+        <div className = "gallery-item" style = {{overflow:"hidden"}}>
             <a href = {'#' + this.state.galleryTitle}><img draggable="false" className="gallery-image" src={this.state.galleryImage}></img></a>
             <h3 className = "gallery-title">{this.state.galleryType}</h3>
             <a href = "#"><div className="light-box" id= {this.state.galleryTitle}><img draggable="false" className="light-image" src={this.state.galleryImage}></img></div></a>
