@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter, HashRouter} from 'react-router-dom';
+import {Router, HashRouter} from 'react-router-dom';
 import { createBrowserHistory } from "history";
 import './index.css';
 import App from './App';
@@ -9,7 +9,7 @@ const hist = createBrowserHistory();
 
 const clientRender = () => {
     ReactDOM.render(
-        <HashRouter history = {hist} basename = "/"><App/></HashRouter>, document.getElementById('root'));
+        <Router history = {hist} basename = "/"><App/></Router>, document.getElementById('root'));
 };
 
 
