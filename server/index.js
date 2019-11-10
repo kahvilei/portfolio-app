@@ -2,7 +2,7 @@ import React from 'react';
 import express from 'express';
 import ReactDOMServer from 'react-dom/server';
 import { StaticRouter } from 'react-router-dom';
-import App from './App';
+import App from '../src/App';
 import path from 'path';
 import fs from 'fs';
 
@@ -12,9 +12,9 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.static('./build'));
 
-app.get('/portfolio-app/*', (req, res) => {
+app.get('/*', (req, res) => {
   const context = {};
-  const app = ReactDOMServer.renderToString(
+  const site = ReactDOMServer.renderToString(
     <StaticRouter location={req.url} context={context}>
       <App />
     </StaticRouter>
@@ -28,7 +28,7 @@ app.get('/portfolio-app/*', (req, res) => {
     }
 
     return res.send(
-      data.replace('<div id="root"></div>', <div id="root">${app}</div>)
+      data.replace('<div id="root"></div>', <div id="root">${site}</div>)
     );
   });
 });
