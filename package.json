@@ -27,13 +27,14 @@
     "compression": "^1.7.0",
     "express": "^4.17.1",
     "git": "^0.1.5",
+    "js-yaml": "^3.13.1",
     "morgan": "^1.9.1",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-flip-move": "^3.0.4",
     "react-pan-and-zoom-hoc": "^2.1.7",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "^1.1.5"
+    "react-scripts": "^3.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -55,5 +56,17 @@
     "babel-preset-react-app": "^3.0.2",
     "babel-preset-stage-0": "^6.24.1",
     "gh-pages": "^2.1.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
