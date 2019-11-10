@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.static('./build'));
 
-app.get('/*', (req, res) => {
+app.get('/portfolio-app/*', (req, res) => {
   const context = {};
   const app = ReactDOMServer.renderToString(
     <StaticRouter location={req.url} context={context}>
