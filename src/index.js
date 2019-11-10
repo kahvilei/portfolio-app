@@ -9,7 +9,7 @@ const hist = createBrowserHistory();
 
 const clientRender = () => {
     ReactDOM.render(
-        <BrowserRouter history = {hist} basename = "/portfolio-app/"><App/></BrowserRouter>, document.getElementById('root'));
+        <HashRouter history = {hist} basename = "/portfolio-app/"><App/></HashRouter>, document.getElementById('root'));
 };
 
 
