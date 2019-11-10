@@ -5,11 +5,10 @@
   "homepage": "https://kahvilei.github.io/portfolio-app",
   "author": {
     "name": "Kathryn Huff",
-    "email": "kat@kathrynhuff.com",
-    "url": "http://app.kathrynhuff.com"
+    "email": "kat@kathrynhuff.com"
   },
   "bugs": {
-    "url": "http://kathrynhuff.com"
+    "url": "https://kahvilei.github.io/portfolio-app"
   },
   "licenses": [
     {
