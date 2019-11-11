@@ -24,14 +24,19 @@ class ComputerScience extends React.Component{
                         <p style= {{ color: '#B3B3B3',marginTop: '30px', width: '60%', fontStyle: 'italic', display: 'block'}}>As an employee of the University of Texas at Dallas, I've experienced firsthand the need for a new Computer Science Department website. The WordPress theme currently being used is outdated and the color scheme creates pages ranging from jarring to in-accessible. My goal is to create a modern, visually appealing landing page that leads the user to want to know more about UTD and contains links to the most commonly visited and searched-for pages currently on the site. </p>
                     </div>
                     <div style= {{position: 'relative', backgroundColor: '#FFF', width: '100vw', height: '76vw', display: 'block', zIndex: '1'}}>
-                        <div style = {{paddingTop: '5vw', maxWidth: '60vw', margin: '0 auto'}}>
+                        <div style = {{paddingTop: '5vw', maxWidth: '60vw', marginLeft: '3vw'}}>
                         <iframe style = {{width: '100%', border:'none', height: '33.8vw', borderRadius: '15px', boxShadow: '3px 3px 9px grey'}}src="https://xd.adobe.com/embed/df562759-241f-4d09-66f0-05ea28114d32-a967/"></iframe>
+                        </div>
+                        <div style = {{paddingTop: '5vw', maxWidth: '40vw', margin: '0 auto'}}>
+                            <h1 style= {{marginLeft: 'calc(50% - 40px)', color: '#5A2727', lineHeight:"0em", textAlign:'left', paddingRight:'40px'}}> Landing Page/</h1>
+                            <h1 style= {{marginLeft: 'calc(50% - 40px)', color: '#EA9B70', margin:'auto', display: 'block', textAlign:'left', paddingRight:'40px'}}> Menu</h1>                   
+                            <p style= {{alignContent: 'left', color: '#707070',marginTop: '30px', marginLeft: 'calc(50% - 40px)', width: '100%', fontStyle: 'italic', display: 'block', textAlign:'left'}}>On announcement day, all social media banners and advertisements were posted for the single's release date.(which can be found below) </p>
                         </div>
                     </div>
                     <div style= {{padding: '5vw', backgroundColor: '#FFF', width: '90vw', height: '95vw', display: 'block', zIndex: '1'}}>
                         <div style = {{width: '40vw', height:'auto', marginTop: '10vw', display: 'inline-block', verticalAlign: 'top'}}>   
-                            <h1 style= {{color: '#5A2727', lineHeight:"0em", textAlign:'right', paddingRight:'40px'}}> Announcement</h1>
-                            <h1 style= {{color: '#EA9B70', margin:'auto', display: 'block', textAlign:'right', paddingRight:'40px'}}> Day</h1>                   
+                            <h1 style= {{marginLeft: 'calc(50% - 40px)', color: '#5A2727', lineHeight:"0em", textAlign:'right', paddingRight:'40px'}}> Landing Page/</h1>
+                            <h1 style= {{marginLeft: 'calc(50% - 40px)', color: '#EA9B70', margin:'auto', display: 'block', textAlign:'right', paddingRight:'40px'}}> Menu</h1>                   
                             <p style= {{alignContent: 'right', color: '#707070',marginTop: '30px', marginRight: '40px', marginLeft: 'calc(50% - 40px)', width: '50%', fontStyle: 'italic', display: 'block', textAlign:'right'}}>On announcement day, all social media banners and advertisements were posted for the single's release date.(which can be found below) </p>
                         </div> 
                         <div style = {{width: '35vw', margin: 'auto', display: 'inline-block'}}>   
