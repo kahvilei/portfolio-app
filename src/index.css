@@ -725,6 +725,89 @@ code {
     background: rgba(13, 32, 5, 0.918) !important;
 }
 
+/*--------------------cg--------------------*/
+
+#collective-group{
+    width: 28vw;
+    height: 28vw;
+    background: black;
+    opacity:0;
+    transition: .5s;
+    position: absolute;
+    top: 0px;
+    left: 6vw;
+    z-index: 2;
+    pointer-events: none;
+}
+
+#collective-group:target .project-header-img {
+    width: 100%;
+    height: auto;
+    background-size:cover;
+    position: fixed;
+    z-index: -1;
+}
+
+#collective-group:target{
+    width: 98vw;
+    height: 100vw;
+    opacity: 1;
+    background: #FFF2EB;
+    top:0;
+    position: absolute;
+    left: 0;
+    pointer-events: all;
+}
+
+.cgContent{
+    display: none;
+    top:0;
+    position: absolute;
+}
+
+#collective-group:target .cgContent{
+    display: block;
+    top:0;
+}
+
+#collective-group:target .project-header-logo {
+    width: 75vw;
+    height: auto;
+    top: 7vw;
+    margin-left: 12vw;
+    margin-right: 12vw;
+    background-size:cover;
+    position: relative;
+}
+
+#collective-group:target .project-header-desc-full{
+    margin-top:10vw;
+    display: block;
+    background-color: rgba(14, 14, 20);
+}
+
+.project-wrapper #cg h1{
+    color:#e4c37b;
+}
+
+.project-wrapper #cg h2{
+    color:rgb(73, 131, 207);
+}
+
+.project-wrapper #cg p{
+    color: rgba(255, 255, 255, 0.61);
+    font-weight: 300;
+    display: block;
+}
+
+#cg .project-sub{
+    display: block;
+    color:rgb(59, 93, 116) !important;
+}
+
+#cg .project-desc-back{
+    background: rgba(14, 14, 20, 0.884) !important;
+}
 
 /*--------------------gallery--------------------*/
 
@@ -751,31 +834,4 @@ code {
 
 #gallery-p .project-desc-back{
     background: rgba(45, 136, 124, 0.911) !important;
-}
-
-/*--------------------cg--------------------*/
-
-
-
-.project-wrapper #cg h1{
-    color:#e4c37b;
-}
-
-.project-wrapper #cg h2{
-    color:rgb(73, 131, 207);
-}
-
-.project-wrapper #cg p{
-    color: rgba(255, 255, 255, 0.61);
-    font-weight: 300;
-    display: block;
-}
-
-#cg .project-sub{
-    display: block;
-    color:rgb(59, 93, 116) !important;
-}
-
-#cg .project-desc-back{
-    background: rgba(14, 14, 20, 0.884) !important;
 }
