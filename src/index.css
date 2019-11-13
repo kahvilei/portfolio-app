@@ -60,7 +60,7 @@ body {
   
 h1{
     font-family: lato;
-    font-weight: 150;
+    font-weight: 300;
     font-style: normal;
     font-size: 3.5em;
     color: black;
@@ -73,8 +73,8 @@ h2{
 }
 
 h3{
-    font-weight: 300;
-    font-size: 1.0em;
+    font-weight: 400;
+    font-size: 1.5em;
     font-style: italic;
     color: black;
     line-height:.7em;
@@ -87,6 +87,7 @@ p, h2, h1{
 
 p{
     font-size: 14px;
+    font-weight: 300;
 }
 @media screen and (min-width: 1600px){
     p{
@@ -94,6 +95,9 @@ p{
     }
     h1{
         font-size: 4em;
+    }
+    h3{
+        font-size: 1.5em;
     }
 }
 @media screen and (max-width: 500px){
@@ -245,25 +249,59 @@ code {
 /*-------------------------------------- Projects ------------------------------------------------*/
 @media screen and (max-width: 500px){
     .project-wrapper{
-        width: 70vw !important;
-        height: 70vw !important;
+        width: 80vw !important;
+        height: 80vw !important;
         display: inline-block;
         overflow: hidden;
-        margin-left: 15vw !important;
+        margin-left: 0vw !important;
         transition: .3s;
     }
     .project-desc-back{
-        width: 70vw !important;
-        height: 70vw !important;
+        width: 80vw !important;
+        height: 80vw !important;
         transition: .3s;
     }
     #projects-wrapper{
         padding-top: 40vw !important;
         transition: .3s;
+        margin: auto !important;
     }
 
     #cover{
         height: 180vh !important;
+    }
+}
+@media screen and (min-width: 1600px){
+    .project-wrapper{
+        width: 30vw !important;
+        height: 30vw !important;
+        display: inline-block;
+        overflow: hidden;
+        transition: .3s;
+    }
+    .project-desc-back{
+        width: 30vw !important;
+        height: 30vw !important;
+        transition: .3s;
+    }
+    #projects-wrapper{
+        transition: .3s;
+        margin-left: 300px;
+    }
+
+    #cover{
+        height: 180vh !important;
+    }
+    .project-wrapper:hover #cs .project-desc{
+        top: 17vw !important;
+    }
+
+    .project-wrapper:hover #cg .project-desc{
+        top: 22vw !important;
+    }
+
+    .project-wrapper:hover .project-desc{
+        top: 23vw !important;
     }
 }
 .project-wrapper{
@@ -316,6 +354,9 @@ code {
     display: none;
 }
 
+#projects-title h3{
+    font-weight: 200 !important;
+}
 
 .project-image{
     width: 100%;
@@ -725,6 +766,89 @@ code {
     background: rgba(13, 32, 5, 0.918) !important;
 }
 
+/*--------------------cg--------------------*/
+
+#collective-group{
+    width: 28vw;
+    height: 28vw;
+    background: black;
+    opacity:0;
+    transition: .5s;
+    position: absolute;
+    top: 0px;
+    left: 6vw;
+    z-index: 2;
+    pointer-events: none;
+}
+
+#collective-group:target .project-header-img {
+    width: 100%;
+    height: auto;
+    background-size:cover;
+    position: fixed;
+    z-index: -1;
+}
+
+#collective-group:target{
+    width: 98vw;
+    height: 100vw;
+    opacity: 1;
+    background: #FFF2EB;
+    top:0;
+    position: absolute;
+    left: 0;
+    pointer-events: all;
+}
+
+.cgContent{
+    display: none;
+    top:0;
+    position: absolute;
+}
+
+#collective-group:target .cgContent{
+    display: block;
+    top:0;
+}
+
+#collective-group:target .project-header-logo {
+    width: 75vw;
+    height: auto;
+    top: 7vw;
+    margin-left: 12vw;
+    margin-right: 12vw;
+    background-size:cover;
+    position: relative;
+}
+
+#collective-group:target .project-header-desc-full{
+    margin-top:10vw;
+    display: block;
+    background-color: rgba(14, 14, 20);
+}
+
+.project-wrapper #cg h1{
+    color:#e4c37b;
+}
+
+.project-wrapper #cg h2{
+    color:rgb(73, 131, 207);
+}
+
+.project-wrapper #cg p{
+    color: rgba(255, 255, 255, 0.61);
+    font-weight: 300;
+    display: block;
+}
+
+#cg .project-sub{
+    display: block;
+    color:rgb(59, 93, 116) !important;
+}
+
+#cg .project-desc-back{
+    background: rgba(14, 14, 20, 0.884) !important;
+}
 
 /*--------------------gallery--------------------*/
 
@@ -751,31 +875,4 @@ code {
 
 #gallery-p .project-desc-back{
     background: rgba(45, 136, 124, 0.911) !important;
-}
-
-/*--------------------cg--------------------*/
-
-
-
-.project-wrapper #cg h1{
-    color:#e4c37b;
-}
-
-.project-wrapper #cg h2{
-    color:rgb(73, 131, 207);
-}
-
-.project-wrapper #cg p{
-    color: rgba(255, 255, 255, 0.61);
-    font-weight: 300;
-    display: block;
-}
-
-#cg .project-sub{
-    display: block;
-    color:rgb(59, 93, 116) !important;
-}
-
-#cg .project-desc-back{
-    background: rgba(14, 14, 20, 0.884) !important;
 }

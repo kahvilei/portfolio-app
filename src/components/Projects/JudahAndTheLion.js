@@ -21,8 +21,7 @@ class JudahAndTheLion extends React.Component{
                     <div className= "project-header-desc-full">
                         <h1 style= {{color: '#5E6166', lineHeight:"0em"}}> Judah & The Lion</h1>
                         <h1 style= {{color: '#FF7065', margin:'auto', display: 'inline-block'}}> Album Release Marketing.</h1><h2 style= {{color: '#FF7065', right:'10vw', textAlign: 'right', position: 'absolute', display: 'inline-block', lineHeight:"0em"}}> Illustration & Branding</h2>
-                        
-                        <p style= {{ color: '#5E6166',marginTop: '30px', width: '60%', fontStyle: 'italic', display: 'block'}}>For Devon Gilfillan's release of his single "High", Triple 8 management contracted me to create a cover that encompassed the feel of his music and took inspiration from psychedelic art and collage . After going through many iterations of the main design and finalization, Devon's manager had me create a series of pre-release graphics that incorporated elements of the cover art's design and garnered interest from Devon's followers and fans. </p>
+                        <p style= {{ color: '#5E6166',marginTop: '30px', width: '60%', display: 'block'}}>For Judah and The Lion's rollout leading up to the release of their album "Pep Talks", I was contracted to create a series of promotional animations that teased the release of the single "Over My Head."</p>
                     </div>
                     <div style= {{position: 'relative', backgroundColor: '#000000df', width: '100vw', height: '56vw', display: 'block', zIndex: '1'}}>
                         <div style = {{paddingTop: '5vw', maxWidth: '66vw', margin: '0 auto'}}>
@@ -30,14 +29,14 @@ class JudahAndTheLion extends React.Component{
                             <div className = "promo-desc" id = "promo-desc-1" style= {{padding: '2vw', marginTop: '-20vw', position: 'absolute', transition: '.3s', backgroundColor: '#343434', width: '14vw', height: '14vw', zIndex: '-1'}}>
                             <i className="fas fa-arrow-left" style = {{ lineHeight: '1.9', color: '#FF7065', paddingTop: '30px;'}}></i>
                                 <h3 style= {{ color: '#FF7065'}}>day one</h3>
-                                <p style= {{ color: '#5E6166'}}>day one had the least detail, just showcasing the subtly shifting pink cloud backdrop</p>
+                                <p style= {{ color: '#eee'}}>"hydrate, caffeinate, medicate, repeat"</p>
                             </div>
                             <div className="promo-img" ></div>
                             <div className="promo-img" style= {{backgroundColor: '#343434', marginTop: '-10vw',padding: '2vw', width: '16vw', height: '16vw'}}>
                                 <div style= {{ display:'table', postion: 'absolute'}}>
                                     <h3 style= {{ lineHeight:'1px',color: '#FF7065', postion: 'absolute'}}>pre-release</h3>
                                     <h3 style= {{  lineHeight:'1px', color: '#FF7065', postion: 'absolute'}}>promotionals</h3>
-                                    <p style= {{ color: '#5E6166', postion: 'absolute'}}>day</p>
+                                    <p style= {{ color: '#eee', postion: 'absolute'}}>Each promotinal animation is based on lyrics from "Over My Head"</p>
                                     <p style= {{ color: '#FF7065', postion: 'absolute'}}>hover on each piece to find out more about it</p>
                                 </div>
                             </div>
@@ -45,19 +44,22 @@ class JudahAndTheLion extends React.Component{
                             <div className = "promo-desc" id = "promo-desc-2" style= {{padding: '2vw', marginLeft: '2vw', marginTop: '-20vw', position: 'absolute', transition: '.3s', backgroundColor: '#343434', width: '14vw', height: '14vw', zIndex: '-1'}}>
                             <i className="fas fa-arrow-up" style = {{ lineHeight: '1.9', color: '#FF7065', paddingTop: '30px;'}}></i>
                                 <h3 style= {{ color: '#FF7065'}}>day two</h3>
-                                <p style= {{ color: '#5E6166'}}>day one had the least detail, just showcasing the subtly shifting pink cloud backdrop</p>
+                                <p style= {{ color: '#eee'}}>"All these thoughts
+Are an ocean I'm drowning in"</p>
                             </div>
                             <img className="promo-img" id = "promo-img-3" src="https://kathrynhuff.com/assets/judah/gif_3.gif"></img>
                             <div className = "promo-desc" id = "promo-desc-3" style= {{padding: '2vw', marginTop: '-20vw', marginLeft: '24vw', position: 'absolute', transition: '.3s', backgroundColor: '#343434', width: '14vw', height: '14vw', zIndex: '-1'}}>
                             <i className="fas fa-arrow-down" style = {{ lineHeight: '1.9', color: '#FF7065', paddingTop: '30px;'}}></i>
                                 <h3 style= {{ color: '#FF7065'}}>day three</h3>
-                                <p style= {{ color: '#5E6166'}}>day one had the least detail, just showcasing the subtly shifting pink cloud backdrop</p>
+                                <p style= {{ color: '#eee'}}>"What's my purpose huh?
+What's my future? I don't know"</p>
                             </div>
                             <img className="promo-img" id = "promo-img-5" src="https://kathrynhuff.com/assets/judah/gif_4.gif"></img>
                             <div className = "promo-desc" id = "promo-desc-5" style= {{padding: '2vw', marginTop: '-20vw', marginLeft: '46vw', position: 'absolute', transition: '.3s', backgroundColor: '#343434', width: '14vw', height: '14vw', zIndex: '-1'}}>
                             <i className="fas fa-arrow-right" style = {{ lineHeight: '1.9', color: '#FF7065', paddingTop: '30px;'}}></i>
-                                <h3 style= {{ color: '#FF7065'}}>day five</h3>
-                                <p style= {{ color: '#5E6166'}}>day one had the least detail, just showcasing the subtly shifting pink cloud backdrop</p>
+                                <h3 style= {{ color: '#FF7065'}}>day four</h3>
+                                <p style= {{ color: '#eee'}}>"I wish my mind would turn off
+<br></br>With the lights on my TV screen"</p>
                             </div>
                         </div>
                     </div>
@@ -65,7 +67,7 @@ class JudahAndTheLion extends React.Component{
                         <div style = {{width: '40vw', height:'auto', marginTop: '10vw', display: 'inline-block', verticalAlign: 'top'}}>   
                             <h1 style= {{color: '#5E6166', lineHeight:"0em", textAlign:'right', paddingRight:'40px'}}> Announcement</h1>
                             <h1 style= {{color: '#FF7065', margin:'auto', display: 'block', textAlign:'right', paddingRight:'40px'}}> Day</h1>                   
-                            <p style= {{alignContent: 'right', color: '#5E6166',marginTop: '30px', marginRight: '40px', marginLeft: 'calc(50% - 40px)', width: '50%', fontStyle: 'italic', display: 'block', textAlign:'right'}}>On announcement day, all social media banners and advertisements were posted for the single's release date.(which can be found below) </p>
+                            <p style= {{alignContent: 'right', color: '#5E6166',marginTop: '30px', marginRight: '40px', marginLeft: 'calc(50% - 40px)', width: '50%', display: 'block', textAlign:'right'}}>On announcement day, all social media banners and advertisements were posted for the single's release date.(which can be found below) </p>
                         </div> 
                         <div style = {{width: '35vw', backgroundColor: '#000', margin: 'auto', display: 'inline-block'}}>   
                         <img style = {{width: '40vw'}} src="https://kathrynhuff.com/assets/judah/over_my_head_cover.jpg"></img>
