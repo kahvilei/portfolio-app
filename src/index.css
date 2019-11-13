@@ -60,7 +60,7 @@ body {
   
 h1{
     font-family: lato;
-    font-weight: 150;
+    font-weight: 300;
     font-style: normal;
     font-size: 3.5em;
     color: black;
@@ -73,8 +73,8 @@ h2{
 }
 
 h3{
-    font-weight: 300;
-    font-size: 1.0em;
+    font-weight: 400;
+    font-size: 1.5em;
     font-style: italic;
     color: black;
     line-height:.7em;
@@ -87,6 +87,7 @@ p, h2, h1{
 
 p{
     font-size: 14px;
+    font-weight: 300;
 }
 @media screen and (min-width: 1600px){
     p{
@@ -94,6 +95,9 @@ p{
     }
     h1{
         font-size: 4em;
+    }
+    h3{
+        font-size: 1.5em;
     }
 }
 @media screen and (max-width: 500px){
@@ -245,25 +249,59 @@ code {
 /*-------------------------------------- Projects ------------------------------------------------*/
 @media screen and (max-width: 500px){
     .project-wrapper{
-        width: 70vw !important;
-        height: 70vw !important;
+        width: 80vw !important;
+        height: 80vw !important;
         display: inline-block;
         overflow: hidden;
-        margin-left: 15vw !important;
+        margin-left: 0vw !important;
         transition: .3s;
     }
     .project-desc-back{
-        width: 70vw !important;
-        height: 70vw !important;
+        width: 80vw !important;
+        height: 80vw !important;
         transition: .3s;
     }
     #projects-wrapper{
         padding-top: 40vw !important;
         transition: .3s;
+        margin: auto !important;
     }
 
     #cover{
         height: 180vh !important;
+    }
+}
+@media screen and (min-width: 1600px){
+    .project-wrapper{
+        width: 30vw !important;
+        height: 30vw !important;
+        display: inline-block;
+        overflow: hidden;
+        transition: .3s;
+    }
+    .project-desc-back{
+        width: 30vw !important;
+        height: 30vw !important;
+        transition: .3s;
+    }
+    #projects-wrapper{
+        transition: .3s;
+        margin-left: 300px;
+    }
+
+    #cover{
+        height: 180vh !important;
+    }
+    .project-wrapper:hover #cs .project-desc{
+        top: 17vw !important;
+    }
+
+    .project-wrapper:hover #cg .project-desc{
+        top: 22vw !important;
+    }
+
+    .project-wrapper:hover .project-desc{
+        top: 23vw !important;
     }
 }
 .project-wrapper{
@@ -316,6 +354,9 @@ code {
     display: none;
 }
 
+#projects-title h3{
+    font-weight: 200 !important;
+}
 
 .project-image{
     width: 100%;

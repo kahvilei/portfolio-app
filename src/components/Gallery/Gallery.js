@@ -67,7 +67,7 @@ class Gallery extends Component {
             <div className = "gallery-collumn" style={{padding: '.25vw', verticalAlign: 'top', position: 'relative', display: "inline-table", width: '29vw', height: '100%'}}> 
                 <div style={{paddingBottom:'.5vw', height: '25vw', transition: '0.1s', background: '#fff', position: 'relative', display: 'block', left:'0px'}}>
                 <h1 style = {{ margin: '0', userSelect: 'none', padding: "20px", fontSize:"5vw", fontWeight: '200'}}>gallery</h1>
-                    <p style = {{ userSelect: 'none', margin: "20px", width:"90%", fontWeight: '200'}}>here is a collection of illustrations that I've completed for personal projects and clients <br></br> <br></br>pan and zoom to interact</p>
+                    <p style = {{ userSelect: 'none', margin: "20px", width:"90%", fontWeight: '200'}}>here is a collection of illustrations that I've completed for personal projects and clients </p>
                 </div>
                 <div style={{transition: '0.1s',position: 'relative', display: 'block' }}>{this.renderItem("https://kathrynhuff.com/assets/gallery/01.jpg","one","ship")}</div>
                 <div style={{transition: '0.1s',position: 'relative', display: 'block'}}>{this.renderItem("https://kathrynhuff.com/assets/gallery/02.jpg","two","2")}</div>

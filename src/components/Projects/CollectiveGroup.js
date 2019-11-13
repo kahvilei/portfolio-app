@@ -21,14 +21,22 @@ class CollectiveGroup extends React.Component{
                         <h1 style= {{color: '#FCB61A', lineHeight:"1em"}}> The Collective<br></br>Group</h1>
                         <h1 style= {{color: 'rgb(59, 93, 116)', lineHeight:"0em", margin:'auto', display: 'inline-block'}}>Branding & Marketing</h1><h2 style= {{color: 'rgb(59, 93, 116)', right:'10vw', textAlign: 'right', position: 'absolute', display: 'inline-block', lineHeight:"0em"}}> </h2>
                         
-                        <p style= {{ color: '#B3B3B3',marginTop: '30px', width: '60%', fontStyle: 'italic', display: 'block'}}>As an employee of the University of Texas at Dallas, I've experienced firsthand the need for a new Computer Science Department website. The WordPress theme currently being used is outdated and the color scheme creates pages ranging from jarring to in-accessible. My goal is to create a modern, visually appealing landing page that leads the user to want to know more about UTD and contains links to the most commonly visited and searched-for pages currently on the site. </p>
+                        <p style= {{ color: '#B3B3B3',marginTop: '30px', width: '60%', display: 'block'}}>Overhall of company marketing assets done while under the employment of The Collective Group; including the creation of new customizeable datasheet templates, a set color scheme, a library of graphics representing company services, and a powerpoint theme with accompanying graphic templates.</p>
                     </div>
-                    <div style= {{padding: '5vw', backgroundColor: '#fff', width: '90vw', height: '40vw', display: 'block', zIndex: '1'}}>
-                        <h1 style= {{color: 'rgb(59, 93, 116)', margin:'auto', display: 'block', textAlign: 'center'}}> Redesigned Data Sheets</h1>
-                        <p style= {{color: '#bbb',  margin:'auto', marginTop: '30px', width: '25%', contentAlign: 'right', fontStyle: 'italic', display: 'block', textAlign: 'left'}}>I created this post-release to accompany the music until the music video was produced. </p>
-                        
+                    <div style= {{animation:'.3s ease-out 0s 1 slideInFromBottom', padding: '10vw', backgroundColor: '#eee', width: '80vw', height: 'auto', display: 'block', zIndex: '1'}}>
+                        <h1 style= {{color: 'rgb(59, 93, 116)', margin:'auto', display: 'block', textAlign: 'center'}}>Redesigned Data Sheets</h1>
+                        <p style= {{color: '#999',  margin:'auto', marginTop: '30px', width: '40%', contentAlign: 'right', display: 'block', textAlign: 'left'}}>I created templates to account for all needed areas from a company overview to color-coded, service specific sheets.</p>
+                        <img style = {{marginTop: '5vw', marginLeft: '5vw', width: '30vw', border:'none', display: 'inline-table'}} src="https://kathrynhuff.com/assets/cg/cg_before_Page_1.jpg"></img>
+                        <div style= {{width: '10vw', zIndex: '1', display: 'inline-table'}}> <img style = {{width: '60%', margin: '20%', marginBottom: '150%'}}src="https://kathrynhuff.com/assets/cg/arrow.svg"></img></div>
+                        <img style = {{marginTop: '5vw', marginRight: '5vw', width: '30vw', border:'none', display: 'inline-table'}} src="https://kathrynhuff.com/assets/cg/cg_overview_Page_1.jpg"></img>
+                        <div style = {{margin: '5vw', width: '20vw', border:'none', display: 'inline-block'}} ><h3 style= {{color: 'rgb(59, 93, 116)'}}>Service Overview Template</h3><img style = {{width: '100%'}}src="https://kathrynhuff.com/assets/cg/cg_specificService_2.jpg"></img></div>
+                        <div style = {{marginBottom: '5vw', width: '20vw', border:'none', display: 'inline-block'}} ><h3 style= {{color: 'rgb(59, 93, 116)'}}>Specific Service Template</h3><img style = {{width: '100%'}}src="https://kathrynhuff.com/assets/cg/cg_specificService_Page_1.jpg"></img></div>
+                        <div style = {{margin: '5vw', width: '20vw', border:'none', display: 'inline-block'}} ><h3 style= {{color: 'rgb(59, 93, 116)'}}>Technology Overview Template</h3><img style = {{width: '100%'}}src="https://kathrynhuff.com/assets/cg/cg_specificService_3.jpg"></img></div>
                     </div>
-                    <div style= {{padding: '5vw', backgroundColor: '#0B1C03EE', width: '90vw', height: '200px', display: 'block', zIndex: '1'}}>
+                    <div style= {{padding: '5vw', backgroundColor: 'rgb(14, 14, 20, 90%)', width: '90vw', height: 'auto', display: 'block', zIndex: '1'}}>
+                    <h1 style= {{color: '#FCB61A', margin:'auto', display: 'block', textAlign: 'center'}}> Color Scheme and Graphics Library</h1>
+                    <p style= {{color: '#eee',  margin:'auto', marginTop: '30px', width: '40%', contentAlign: 'right', display: 'block', textAlign: 'left'}}>For each of Collective's business branches I assigned a set color and graphic to be used in marketing/datasheets and created a library of graphics to represent sub-services and features.</p>
+                    <img style = {{width: '60%', margin: '20%', marginTop: '5%'}}src="https://kathrynhuff.com/assets/cg/library.svg"></img>
                     </div>
                 </div>
             </div>
