@@ -4,7 +4,11 @@ import JudahAndTheLion from './JudahAndTheLion';
 import ComputerScience from './ComputerScience';
 import CollectiveGroup from './CollectiveGroup';
 import FlipMove from 'react-flip-move';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { NavLink } from 'react-router-dom';
+
+AOS.init();
 
 
 
@@ -140,20 +144,20 @@ class Project extends React.Component{
         return<div id = "content" style = {{marginTop: '0px',paddingTop: '0px', width: '100vw'}}>
                 <div id = "projects-title" style = {{ position: 'fixed', paddingTop: '0vw', margin: '0 0 1vw 4vw'}}>
                     <h1 style = {{ userSelect: 'none', fontSize:"5vw", fontWeight: '200'}}>projects</h1>
-                    <a href="#all" onClick = {() => this.sortProject('all') }><h3>All</h3></a>
-                    <a href="#web"onClick = {() => this.sortProject('web') }><h3>Web Design</h3></a>
-                    <a href="#ill" onClick = {() => this.sortProject('ill') }><h3>Illustration</h3></a>
+                    <a href="#all" onClick = {() => this.sortProject('all')}><h3>All</h3></a>
+                    <a href="#web"onClick = {() => this.sortProject('web')}><h3>Web Design</h3></a>
+                    <a href="#ill" onClick = {() => this.sortProject('ill')}><h3>Illustration</h3></a>
                     <a href="#mar" onClick = {() => this.sortProject('mar') }><h3>Marketing</h3></a>
                     <a href="#mar" onClick = {() => this.sortProject('gra') }><h3>Graphic Design</h3></a>
                 </div>
                 <FlipMove id = "projects-wrapper" style = {{paddingTop: '0vw', margin: '0 0 2vw 25vw'}}>
                
-                <a key = "a" onClick = {() => this.openProject('cs')} href="#computer-science"style = {{transition: '.3s'}}><div style = {{position: 'relative', display: this.state.csOpen}} className = "project-wrapper">{this.renderItem("https://kathrynhuff.com/assets/cs_prev.jpg","The Computer Science Department","Web Design & Branding","As an employee of the University of Texas at Dallas, I've experienced firsthand the need for a new Computer Science Department website...","cs", "Website Re-design")}</div></a>
-                <a key = "b" onClick = {() => this.openProject('devon')} href="#devon-gilfillian" style = {{transition: '.3s'}}><div style = {{position: 'relative', zIndex: '1', display: this.state.devonOpen}} className = "project-wrapper">{this.renderItem("http://kathrynhuff.com/assets/devon_prev.jpg","Devon Gilfillian","Illustration & Branding","For Devon Gilfillan's release of his single \"High\", Triple 8 management contracted me to create a cover that encompassed the feel of his music and took inspiration from psychedelic art and collage... ", "devon", "Single Release Marketing")}</div></a>
-                <NavLink to ="/gallery" id = "gallery"><div  style = {{position: 'relative', zIndex: '1', display: this.state.galleryOpen}}className = "project-wrapper">{this.renderItem("https://kathrynhuff.com/assets/gall_prev.jpg","Art Gallery","","a collection of illustrations that I've completed for personal projects and clients","gallery-p", "Illustration & Painting")}</div></NavLink>
-                <a key = "d" onClick = {() => this.openProject('judah')} href="#judah-and-the-lion" style = {{transition: '.3s'}}><div  style = {{position: 'relative', zIndex: '1', display: this.state.judahOpen}}className = "project-wrapper">{this.renderItem("https://kathrynhuff.com/assets/judah_prev.jpg","Judah & The Lion","Illustration & Branding","For Judah and The Lion's rollout leading up to the release of their album \"Pep Talks\", I was contracted to create a series of promotional animations that teased the release of the single \"Over My Head...\"","judah", "Album Release Marketing")}</div></a>
-                <a key = "e" onClick = {() => this.openProject('cg')} href="#collective-group" style = {{transition: '.3s'}}><div  style = {{transition: '.3s', position: 'relative', zIndex: '1', display: this.state.cgOpen}}className = "project-wrapper">{this.renderItem("https://kathrynhuff.com/assets/gall_prev.jpg","The Collective Group","","Overhall of company marketing assets done while under the employment of The Collective Group; including the creation of new customizeable datasheet templates, a set color scheme, a library of graphics representing company services, and a powerpoint theme with accompanying graphic templates...","cg", "Branding & Marketing")}</div></a>
-
+                <a key = "a" onClick = {() => this.openProject('cs')} href="#computer-science"style = {{transition: '.3s'}}><div data-aos="zoom-in" style = {{position: 'relative', display: this.state.csOpen}} className = "project-wrapper">{this.renderItem("https://kathrynhuff.com/assets/cs_prev.jpg","The Computer Science Department","Web Design & Branding","As an employee of the University of Texas at Dallas, I've experienced firsthand the need for a new Computer Science Department website...","cs", "Website Re-design")}</div></a>
+                <a key = "b" onClick = {() => this.openProject('devon')} href="#devon-gilfillian" style = {{transition: '.3s'}}><div data-aos="zoom-in" data-aos-delay="50" style = {{position: 'relative', zIndex: '1', display: this.state.devonOpen}} className = "project-wrapper">{this.renderItem("http://kathrynhuff.com/assets/devon_prev.jpg","Devon Gilfillian","Illustration & Branding","For Devon Gilfillan's release of his single \"High\", Triple 8 management contracted me to create a cover that encompassed the feel of his music and took inspiration from psychedelic art and collage... ", "devon", "Single Release Marketing")}</div></a>
+                <NavLink to ="/gallery" id = "gallery"><div data-aos="zoom-in" data-aos-delay="150" style = {{position: 'relative', zIndex: '1', display: this.state.galleryOpen}}className = "project-wrapper">{this.renderItem("https://kathrynhuff.com/assets/gall_prev.jpg","Art Gallery","","a collection of illustrations that I've completed for personal projects and clients","gallery-p", "Illustration & Painting")}</div></NavLink>
+                <a key = "d" onClick = {() => this.openProject('judah')} href="#judah-and-the-lion" style = {{transition: '.3s'}}><div data-aos="zoom-in" data-aos-delay="200" style = {{position: 'relative', zIndex: '1', display: this.state.judahOpen}}className = "project-wrapper">{this.renderItem("https://kathrynhuff.com/assets/judah_prev.jpg","Judah & The Lion","Illustration & Branding","For Judah and The Lion's rollout leading up to the release of their album \"Pep Talks\", I was contracted to create a series of promotional animations that teased the release of the single \"Over My Head...\"","judah", "Album Release Marketing")}</div></a>
+                <a key = "e" onClick = {() => this.openProject('cg')} href="#collective-group" style = {{transition: '.3s'}}><div data-aos="zoom-in" data-aos-delay="250" style = {{transition: '.3s', position: 'relative', zIndex: '1', display: this.state.cgOpen}}className = "project-wrapper">{this.renderItem("https://kathrynhuff.com/assets/gall_prev.jpg","The Collective Group","","Overhall of company marketing assets done while under the employment of The Collective Group; including the creation of new customizeable datasheet templates, a set color scheme, a library of graphics representing company services, and a powerpoint theme with accompanying graphic templates...","cg", "Branding & Marketing")}</div></a>
+                
                 </FlipMove>
                 <div style = {{ backgroundColor: "#eee", marginTop: '.6vw', height: "35vw", width: "65vw", margin: '0 0 0vw 25vw'}}></div>
 
