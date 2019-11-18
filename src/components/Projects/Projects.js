@@ -6,9 +6,9 @@ import CollectiveGroup from './CollectiveGroup';
 import FlipMove from 'react-flip-move';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { NavLink } from 'react-router-dom';
 
 AOS.init();
-import { NavLink } from 'react-router-dom';
 
 
 
