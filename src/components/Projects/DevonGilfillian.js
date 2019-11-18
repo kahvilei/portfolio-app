@@ -58,9 +58,9 @@ class DevonGilfillian extends React.Component{
                 <div className = "devonContent">
                     <div className= "project-header-desc-full">
                         <h1 style= {{color: '#5A2727', lineHeight:"0em"}}> Devon Gilfillian</h1>
-                        <h1 style= {{color: '#EA9B70', margin:'auto', display: 'inline-block'}}> Single Release Marketing.</h1><h2 style= {{color: '#EA9B70', right:'10vw', textAlign: 'right', position: 'absolute', display: 'inline-block', lineHeight:"0em"}}> Illustration & Branding</h2>
+                        <h1 style= {{color: '#EA9B70', margin:'auto', display: 'inline-block'}}> Single Release Marketing.</h1><h2 className = "mobileDelete" style= {{color: '#EA9B70', right:'10vw', textAlign: 'right', position: 'absolute', display: 'inline-block', lineHeight:"0em"}}> Illustration & Branding</h2>
                         
-                        <p style= {{ color: '#707070',marginTop: '30px', width: '60%', display: 'block'}}>For Devon Gilfillan's release of his single "High", Triple 8 management contracted me to create a cover that encompassed the feel of his music and took inspiration from psychedelic art and collage . After going through many iterations of the main design and finalization, Devon's manager had me create a series of pre-release graphics that incorporated elements of the cover art's design and garnered interest from Devon's followers and fans. </p>
+                        <p className= "mobileFull" style= {{ color: '#707070',marginTop: '30px', width: '60%', display: 'block'}}>For Devon Gilfillan's release of his single "High", Triple 8 management contracted me to create a cover that encompassed the feel of his music and took inspiration from psychedelic art and collage . After going through many iterations of the main design and finalization, Devon's manager had me create a series of pre-release graphics that incorporated elements of the cover art's design and garnered interest from Devon's followers and fans. </p>
                     </div>
                     <div style= {{position: 'relative', backgroundColor: '#FFF2EBef', width: '100vw', height: '76vw', display: 'block', zIndex: '1'}}>
                         <div style = {{paddingTop: '5vw', maxWidth: '66vw', margin: '0 auto'}}>
@@ -75,7 +75,7 @@ class DevonGilfillian extends React.Component{
                                 <div style= {{ display:'table', postion: 'absolute'}}>
                                     <h3 style= {{ lineHeight:'1px',color: '#5A2727', postion: 'absolute'}}>pre-release</h3>
                                     <h3 style= {{  lineHeight:'1px', color: '#EA9B70', postion: 'absolute'}}>promotionals</h3>
-                                    <p style= {{ color: '#707070', postion: 'absolute'}}>Each day in the 5 days leading up to "High's" announcement, a new graphic was posted across social media.</p>
+                                    <p className = "mobileDelete" style= {{ color: '#707070', postion: 'absolute'}}>Each day in the 5 days leading up to "High's" announcement, a new graphic was posted across social media.</p>
                                     <p style= {{ color: '#EA9B70', postion: 'absolute'}}>hover on each piece to find out more about it</p>
                                 </div>
                             </div>
@@ -107,25 +107,25 @@ class DevonGilfillian extends React.Component{
                             </div>
                         </div>
                     </div>
-                    <div style= {{padding: '5vw', backgroundColor: '#FFF', width: '90vw', height: '95vw', display: 'block', zIndex: '1'}}>
-                        <div style = {{width: '40vw', height:'auto', marginTop: '10vw', display: 'inline-block', verticalAlign: 'top'}}>   
-                            <h1 style= {{color: '#5A2727', lineHeight:"0em", textAlign:'right', paddingRight:'40px'}}> Announcement</h1>
-                            <h1 style= {{color: '#EA9B70', margin:'auto', display: 'block', textAlign:'right', paddingRight:'40px'}}> Day</h1>                   
-                            <p style= {{alignContent: 'right', color: '#707070',marginTop: '30px', marginRight: '40px', marginLeft: 'calc(50% - 40px)', width: '50%', display: 'block', textAlign:'right'}}>On announcement day, all social media banners and advertisements were posted for the single's release date.(which can be found below) </p>
+                    <div className= "mobileAuto" style= {{padding: '5vw', backgroundColor: '#FFF', width: '90vw', height: '95vw', display: 'block', zIndex: '1'}}>
+                        <div className= "mobileFullPad" style = {{width: '40vw', height:'auto', marginTop: '10vw', display: 'inline-block', verticalAlign: 'top'}}>   
+                            <h1 className= "mobileFull" style= {{color: '#5A2727', lineHeight:"0em", textAlign:'right', paddingRight:'40px'}}> Announcement</h1>
+                            <h1 className= "mobileFull" style= {{color: '#EA9B70', margin:'auto', display: 'block', textAlign:'right', paddingRight:'40px'}}> Day</h1>                   
+                            <p className= "mobileFull" style= {{alignContent: 'right', color: '#707070',marginTop: '30px', marginRight: '40px', marginLeft: 'calc(50% - 40px)', width: '50%', display: 'block', textAlign:'right'}}>On announcement day, all social media banners and advertisements were posted for the single's release date.(which can be found below) </p>
                         </div> 
-                        <div style = {{width: '35vw', margin: 'auto', display: 'inline-block'}}>   
-                        <img style = {{width: '40vw'}} src="https://kathrynhuff.com/assets/devon_prev.jpg"></img>
+                        <div className= "mobileFullPad" style = {{width: '35vw', margin: 'auto', display: 'inline-block'}}>   
+                        <img className= "mobileFull"  style = {{width: '40vw'}} src="https://kathrynhuff.com/assets/devon_prev.jpg"></img>
                         </div> 
-                        <img style = {{ left: '0', rihgt: '0', position: 'absolute', padding: '10vw', width: '80vw', display: 'block'}} src="https://kathrynhuff.com/assets/cg/devon_ads.png"></img>
+                        <img className= "mobileAuto" style = {{ left: '0', rihgt: '0', position: 'absolute', padding: '10vw', width: '80vw', display: 'block'}} src="https://kathrynhuff.com/assets/cg/devon_ads.png"></img>
                     </div>
-                    <div style= {{padding: '5vw', backgroundColor: '#FFF2EB', width: '90vw', height: '200px', display: 'block', zIndex: '1'}}>
+                    <div className= "mobileAuto"  style= {{padding: '5vw', backgroundColor: '#FFF2EB', width: '90vw', height: '200px', display: 'block', zIndex: '1'}}>
                         
                     </div>
                     <div style= {{paddingLeft: '2vw', paddingRight: '2vw',paddingBottom: '2vw',backgroundColor: '#FFF', width: '96vw', height: 'auto', display: 'block', zIndex: '1'}}>
-                        <iframe style = {{width: '55vw', height: '31vw', margin: 'auto', display: 'inline-block'}}
+                        <iframe className= "mobileFullPad" style = {{width: '55vw', height: '31vw', margin: 'auto', display: 'inline-block'}}
                             src="https://www.youtube.com/embed/-hooon8O8n4">    
                         </iframe>
-                        <div style = {{width: '30vw', height:'auto', marginLeft: '2vw', marginTop: '8vw', display: 'inline-block', verticalAlign: 'top'}}>   
+                        <div className= "mobileFullPad" style = {{width: '30vw', height:'auto', marginLeft: '2vw', marginTop: '8vw', display: 'inline-block', verticalAlign: 'top'}}>   
                             <h1 style= {{color: '#5A2727', lineHeight:"0em"}}> Audio</h1>
                             <h1 style= {{color: '#EA9B70', margin:'auto', display: 'block'}}> Visualizer</h1>                   
                             <p style= {{ color: '#707070',marginTop: '30px', width: '90%', display: 'block'}}>I created this post-release to accompany the music until the music video was produced. </p>

@@ -3,8 +3,46 @@ import SVGElement from 'react';
 
 class JudahAndTheLion extends React.Component{
 
+    constructor(props){
+        super(props);
+        this.state={
+            projOpen:false
+ 
+          };
+        
+    }
+
+    loadImages(){
+
+    }
+
+    shouldComponentUpdate(nextProps,nextState){
+      return true;
+     }
+
+    componentDidMount(){
+        this.setState({
+            projOpen:this.props.open
+        });
+    }
+
     render(){
-        return<div id = "judah-and-the-lion">
+        if (!this.props.open){
+            return<div id = "judah-and-the-lion">
+            <div id = "head-top" style={{top:'0px',position: 'fixed', zIndex:'2', background: 'rgba(255, 255, 255)', height:'30px', width:'100%'}} ></div>
+            <div id = "head-left-project" style={{position: 'fixed', zIndex:'2', top:'30px', background: 'rgba(255, 255, 255)', height:'100vh',width:'30px'}} >
+            </div>
+            <a href="#" id = "ex" style={{position: 'fixed', zIndex:'2', left: '40px', top:'40px', background: '#19929B', height:'30px',width:'30px', borderRadius: '50%', textAlign: 'center'}} >
+                 <i className="fas fa-times" style = {{ lineHeight: '1.9', color: 'white', paddingTop: '30px;'}}></i>
+            </a>
+            <div id = "head-right" style={{position: 'fixed', zIndex:'2', top:'30px', right:'0px', background: 'rgba(255, 255, 255)', height:'100vh', width:'30px'}} >
+            </div>
+            <div id = "head-bottom" style={{position: 'fixed', zIndex:'3', right:'30px', left: '30px', bottom:'0', background: 'rgba(255, 255, 255)', height:'30px'}}></div>
+            <img className="project-header-img" src="https://kathrynhuff.com/assets/topbar-judah.jpg"></img>
+            <div style= {{position: 'relative', backgroundColor: '#000000df', width: '100vw', height: '100vh', display: 'block', zIndex: '1', position: 'fixed'}}></div>
+            <div className = "judahContent" ref = {this.refs.projContent} style= {{width: '100vw', height: '100vh'}}></div></div>
+        }
+        else if (this.props.open) {return<div id = "judah-and-the-lion">
             <div id = "head-top" style={{top:'0px',position: 'fixed', zIndex:'2', background: 'rgba(255, 255, 255)', height:'30px', width:'100%'}} ></div>
             <div id = "head-left-project" style={{position: 'fixed', zIndex:'2', top:'30px', background: 'rgba(255, 255, 255)', height:'100vh',width:'30px'}} >
             </div>
@@ -20,8 +58,8 @@ class JudahAndTheLion extends React.Component{
                 <div className = "judahContent">
                     <div className= "project-header-desc-full">
                         <h1 style= {{color: '#5E6166', lineHeight:"0em"}}> Judah & The Lion</h1>
-                        <h1 style= {{color: '#FF7065', margin:'auto', display: 'inline-block'}}> Album Release Marketing.</h1><h2 style= {{color: '#FF7065', right:'10vw', textAlign: 'right', position: 'absolute', display: 'inline-block', lineHeight:"0em"}}> Illustration & Branding</h2>
-                        <p style= {{ color: '#5E6166',marginTop: '30px', width: '60%', display: 'block'}}>For Judah and The Lion's rollout leading up to the release of their album "Pep Talks", I was contracted to create a series of promotional animations that teased the release of the single "Over My Head."</p>
+                        <h1 style= {{color: '#FF7065', margin:'auto', display: 'inline-block'}}> Album Release Marketing.</h1><h2 className = "mobileDelete"  style= {{color: '#FF7065', right:'10vw', textAlign: 'right', position: 'absolute', display: 'inline-block', lineHeight:"0em"}}> Illustration & Branding</h2>
+                        <p className= "mobileFull" style= {{ color: '#5E6166',marginTop: '30px', width: '60%', display: 'block'}}>For Judah and The Lion's rollout leading up to the release of their album "Pep Talks", I was contracted to create a series of promotional animations that teased the release of the single "Over My Head."</p>
                     </div>
                     <div style= {{position: 'relative', backgroundColor: '#000000df', width: '100vw', height: '56vw', display: 'block', zIndex: '1'}}>
                         <div style = {{paddingTop: '5vw', maxWidth: '66vw', margin: '0 auto'}}>
@@ -36,7 +74,7 @@ class JudahAndTheLion extends React.Component{
                                 <div style= {{ display:'table', postion: 'absolute'}}>
                                     <h3 style= {{ lineHeight:'1px',color: '#FF7065', postion: 'absolute'}}>pre-release</h3>
                                     <h3 style= {{  lineHeight:'1px', color: '#FF7065', postion: 'absolute'}}>promotionals</h3>
-                                    <p style= {{ color: '#eee', postion: 'absolute'}}>Each promotinal animation is based on lyrics from "Over My Head"</p>
+                                    <p className = "mobileDelete" style= {{ color: '#eee', postion: 'absolute'}}>Each promotinal animation is based on lyrics from "Over My Head"</p>
                                     <p style= {{ color: '#FF7065', postion: 'absolute'}}>hover on each piece to find out more about it</p>
                                 </div>
                             </div>
@@ -63,14 +101,14 @@ What's my future? I don't know"</p>
                             </div>
                         </div>
                     </div>
-                    <div style= {{padding: '5vw', backgroundColor: '#FFF', width: '90vw', height: '40vw', display: 'block', zIndex: '1'}}>
-                        <div style = {{width: '40vw', height:'auto', marginTop: '10vw', display: 'inline-block', verticalAlign: 'top'}}>   
-                            <h1 style= {{color: '#5E6166', lineHeight:"0em", textAlign:'right', paddingRight:'40px'}}> Announcement</h1>
-                            <h1 style= {{color: '#FF7065', margin:'auto', display: 'block', textAlign:'right', paddingRight:'40px'}}> Day</h1>                   
-                            <p style= {{alignContent: 'right', color: '#5E6166',marginTop: '30px', marginRight: '40px', marginLeft: 'calc(50% - 40px)', width: '50%', display: 'block', textAlign:'right'}}>On announcement day, all social media banners and advertisements were posted for the single's release date.(which can be found below) </p>
+                    <div className= "mobileAuto" style= {{padding: '5vw', backgroundColor: '#FFF', width: '90vw', height: '40vw', display: 'block', zIndex: '1'}}>
+                        <div className= "mobileFullPad" style = {{width: '40vw', height:'auto', marginTop: '10vw', display: 'inline-block', verticalAlign: 'top'}}>   
+                            <h1 className= "mobileFull" style= {{color: '#5E6166', lineHeight:"0em", textAlign:'right', paddingRight:'40px'}}> Announcement</h1>
+                            <h1 className= "mobileFull" style= {{color: '#FF7065', margin:'auto', display: 'block', textAlign:'right', paddingRight:'40px'}}> Day</h1>                   
+                            <p className= "mobileFull" style= {{alignContent: 'right', color: '#5E6166',marginTop: '30px', marginRight: '40px', marginLeft: 'calc(50% - 40px)', width: '50%', display: 'block', textAlign:'right'}}>On announcement day, all social media banners and advertisements were posted for the single's release date.(which can be found below) </p>
                         </div> 
-                        <div style = {{width: '35vw', backgroundColor: '#000', margin: 'auto', display: 'inline-block'}}>   
-                        <img style = {{width: '40vw'}} src="https://kathrynhuff.com/assets/judah/over_my_head_cover.jpg"></img>
+                        <div className= "mobileFullPad" style = {{width: '35vw', backgroundColor: '#000', margin: 'auto', display: 'inline-block'}}>   
+                        <img className= "mobileFull" style = {{width: '40vw'}} src="https://kathrynhuff.com/assets/judah/over_my_head_cover.jpg"></img>
                         </div> 
                     </div>
                     <div style= {{padding: '5vw', backgroundColor: '#000000df', width: '90vw', height: '90vw', display: 'block', zIndex: '1'}}>
@@ -78,6 +116,7 @@ What's my future? I don't know"</p>
                     </div>
                 </div>
             </div>
+        }
     }
 }
 

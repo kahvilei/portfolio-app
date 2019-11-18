@@ -62,22 +62,25 @@ h1{
     font-family: lato;
     font-weight: 300;
     font-style: normal;
-    font-size: 3.5em;
+    font-size: 3.5vw;
     color: black;
 }
 
 h2{
     font-family: lato;
-    font-weight: 400;
+    font-weight: 600;
+    font-size: 2em;
     font-style: italic;
+    font-size: 2vw;
+    text-align: left !important;
 }
 
 h3{
     font-weight: 400;
-    font-size: 1.5em;
     font-style: italic;
     color: black;
     line-height:.7em;
+    font-size: 1.7vw;
 }
 
 p, h2, h1{
@@ -86,7 +89,7 @@ p, h2, h1{
 }
 
 p{
-    font-size: 14px;
+    font-size: 1vw;
     font-weight: 300;
 }
 @media screen and (min-width: 1600px){
@@ -102,7 +105,7 @@ p{
 }
 @media screen and (max-width: 500px){
     p{
-        font-size: 12px!important;
+        font-size: 14px!important;
     }
     h1{
         font-size: 1.3em!important;
@@ -110,8 +113,36 @@ p{
     }
     h2{
         font-size: 14px!important;
+
+    }
+    h3{
+        font-size: .7em;
+    }
+    .mobileDelete{
+        display: none !important;
+    }
+    .mobileFull{
+        width: 100% !important;
+        display: block !important;
+        position: relative !important;
+        text-align: left !important;
+        margin: 0 !important;
+    }
+    .mobileFullPad{
+        width: 76% !important;
+        display: block !important;
+        position: relative !important;
+        padding: 12% !important;
+        margin: 0 !important;
+        text-align: left !important;
+    }
+    .mobileAuto{
+        display: block !important;
+        position: relative !important;
+        height: auto !important;
     }
 }
+
 
 /* prevent unnecessary side scroll*/
 .App{
@@ -194,6 +225,12 @@ code {
       opacity: 1;
     }
   }
+
+  @media screen and (max-width: 500px){
+    .gallery-collumn{
+        width: 80vw !important;
+    }
+}
 .light-box{
     top:0;
     left:0;
@@ -278,6 +315,11 @@ code {
 
     #cover{
         height: 180vh !important;
+    }
+
+    .project-header-img{
+        height: 100vh !important;
+        width: auto !important;
     }
 }
 @media screen and (min-width: 1600px){
