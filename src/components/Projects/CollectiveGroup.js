@@ -14,7 +14,7 @@ class CollectiveGroup extends React.Component{
             </div>
             <div id = "head-bottom" style={{position: 'fixed', zIndex:'3', right:'30px', left: '30px', bottom:'0', background: 'rgba(255, 255, 255)', height:'30px'}}></div>
             
-            <img className="project-header-img" src="https://kathrynhuff.com/assets/cs_prev.jpg"></img>
+            <img className="project-header-img" src="https://kathrynhuff.com/assets/cg_header.jpg"></img>
 
                 <div className = "cgContent">
                     <div className= "project-header-desc-full">
