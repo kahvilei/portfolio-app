@@ -82,6 +82,10 @@ h3{
     line-height:.7em;
     font-size: 1.7vw;
 }
+h4{
+    font-weight: 500;
+    font-size: 1.2vw;
+}
 
 p, h2, h1{
     color: rgb(0, 0, 0);
@@ -112,11 +116,15 @@ p{
         line-height: 1em!important;
     }
     h2{
-        font-size: 14px!important;
+        font-size: 18px!important;
 
     }
     h3{
         font-size: .7em;
+    }
+    h4{
+        font-weight: 500;
+        font-size: .8em;
     }
     .mobileDelete{
         display: none !important;
