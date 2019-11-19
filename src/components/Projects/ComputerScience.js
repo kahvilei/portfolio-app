@@ -63,7 +63,7 @@ class ComputerScience extends React.Component{
                     </div>
                     <div className= "mobileAuto" style= {{position: 'relative', backgroundColor: '#FFF', width: '100vw', height: '45vw', display: 'block', zIndex: '1'}}>
                         <div className= "mobileFullPad" style = {{paddingTop: '5vw', width: '60vw', marginLeft: '3vw', display: 'inline-block'}}>
-                        <iframe className= "mobileAuto" style = {{width: '100%', border:'none', height: '30.2vw', boxShadow: '3px 3px 9px grey'}}src="https://xd.adobe.com/embed/df562759-241f-4d09-66f0-05ea28114d32-a967/"></iframe>
+                        <iframe className= "mobileAuto" style = {{width: '100%', border:'none', height: '32.2vw', boxShadow: '3px 3px 9px grey'}}src="https://xd.adobe.com/embed/df562759-241f-4d09-66f0-05ea28114d32-a967/"></iframe>
                         </div>
                         <div className= "mobileFullPad" style = {{position: 'absolute', paddingTop: '10vw', width: '37vw', display: 'inline-block'}}>
                             <h1 style= {{marginLeft: '3vw', color: '#5A2727', lineHeight:"0em", textAlign:'left', paddingRight:'40px'}}>Landing Page/</h1>
