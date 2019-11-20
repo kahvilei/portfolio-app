@@ -23,9 +23,9 @@ class NavBar extends Component {
                     <p style = {{fontStyle: 'italic', positon: 'absolute', width: '300px',transform: 'rotate(-90deg)'}}>kathryn huff</p>   
                 </div>
                 <nav id = "nav">
-                        <NavLink to ="/about-me" id = "about">about </NavLink>
                         <NavLink to ="/projects" id = "projects">projects</NavLink>
                         <NavLink to ="/gallery" id = "gallery">gallery</NavLink>
+                        <NavLink to ="/about-me" id = "about">about </NavLink>
                         <i style={{transition: '.4s',position: 'absolute', bottom: '30px', left: '17px'}}className="far fa-envelope-open"></i>
                         <i style={{transition: '.4s',position: 'absolute', bottom: '75px', left: '17px'}}className="fab fa-artstation"></i>
                 </nav> 

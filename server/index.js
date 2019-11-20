@@ -20,7 +20,7 @@ app.get('/*', (req, res) => {
     </StaticRouter>
   );
 
-  const indexFile = path.resolve('./build/index.html');
+  const indexFile = path.resolve('./index.html');
   fs.readFile(indexFile, 'utf8', (err, data) => {
     if (err) {
       console.error('Something went wrong:', err);
@@ -31,6 +31,19 @@ app.get('/*', (req, res) => {
       data.replace('<div id="root"></div>', <div id="root">${site}</div>)
     );
   });
+
+  if (context.url) {
+    res.writeHead(301, {
+      Location: context.url
+    });
+    res.end();
+  } else {
+    res.write(`
+    <!doctype html>
+    <div id="app">${site}</div>
+  `);
+    res.end();
+  }
 });
 
 app.listen(PORT, () => {
