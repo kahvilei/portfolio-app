@@ -35,7 +35,7 @@ class galleryItem extends Component{
         return(
         <div className = "gallery-item" style = {{overflow:"hidden"}}>
             <a href = "#"><div className="light-box" id= {this.state.galleryTitle}><img draggable="false" className="light-image" src={this.state.galleryImage}></img></div></a>
-            <a data-aos="zoom-in" data-aos-delay="250"  data-aos-offset = "-2000" href = {'#' + this.state.galleryTitle}><img draggable="false" className="gallery-image" src={this.state.galleryImage}></img></a>
+            <a draggable="false" data-aos="zoom-in" data-aos-delay="250"  data-aos-offset = "-2000" href = {'#' + this.state.galleryTitle}><img draggable="false" className="gallery-image" src={this.state.galleryImage}></img></a>
         </div>
         );
     }

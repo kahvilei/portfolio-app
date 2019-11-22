@@ -68,7 +68,7 @@ class DevonGilfillian extends React.Component{
                             <div className = "promo-desc" id = "promo-desc-1" style= {{padding: '2vw', marginTop: '-20vw', position: 'absolute', transition: '.3s', backgroundColor: '#FFF', width: '14vw', height: '14vw', zIndex: '-1'}}>
                             <i className="fas fa-arrow-left" style = {{ lineHeight: '1.9', color: '#EA9B70', paddingTop: '30px;'}}></i>
                                 <h3 style= {{ color: '#5A2727'}}>day one</h3>
-                                <p style= {{ color: '#B5DC31'}}>day one had the least detail, just showcasing the subtly shifting pink cloud backdrop</p>
+                                <p style= {{ color: '#707070'}}>day one had the least detail, just showcasing the subtly shifting pink cloud backdrop</p>
                             </div>
                             <div className="promo-img" ></div>
                             <div className="promo-img" style= {{backgroundColor: '#FFF', marginTop: '-10vw',padding: '2vw', width: '16vw', height: '16vw'}}>
@@ -76,7 +76,7 @@ class DevonGilfillian extends React.Component{
                                     <h3 style= {{ lineHeight:'1px',color: '#5A2727', postion: 'absolute'}}>pre-release</h3>
                                     <h3 style= {{  lineHeight:'1px', color: '#EA9B70', postion: 'absolute'}}>promotionals</h3>
                                     <p className = "mobileDelete" style= {{ color: '#707070', postion: 'absolute'}}>Each day in the 5 days leading up to "High's" announcement, a new graphic was posted across social media.</p>
-                                    <p style= {{ color: '#EA9B70', postion: 'absolute'}}>hover on each piece to find out more about it</p>
+                                    <p style= {{ color: '#B5DC31', postion: 'absolute'}}>hover on each piece to find out more about it</p>
                                 </div>
                             </div>
                             <img className="promo-img" id = "promo-img-2" src="https://kathrynhuff.com/assets/4_1.gif"></img>

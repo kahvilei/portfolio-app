@@ -12,7 +12,10 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.static('./build'));
 
+console.log("whats up"); 
+
 app.get('/*', (req, res) => {
+  console.log("whats up from inside the static router"); 
   const context = {};
   const site = ReactDOMServer.renderToString(
     <StaticRouter location={req.url} context={context}>

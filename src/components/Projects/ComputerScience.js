@@ -1,28 +1,52 @@
 import React, { Component } from 'react';
+import LazyLoad from 'react-lazyload';
+
+class Frame extends React.Component{
+    constructor(props){
+        super(props);
+        this.state={
+            frameOpen:true,
+            link:"about:none"
+          };
+        
+    }
+
+    componentDidMount(){
+        this.setState({
+           link:this.props.link
+        });
+    }
+
+    render(){return<embed className= "mobileAuto" style = {{display: 'grid', width: '100%', border:'none', height: '28.2vw', boxShadow: '3px 3px 9px grey'}}src={this.state.link}></embed>}
+}
 
 class ComputerScience extends React.Component{
 
     constructor(props){
         super(props);
         this.state={
-            projOpen:false
- 
+            projOpen:false,
+            oneOpen: 'none'
           };
+          this.progress = React.createRef();
         
     }
 
-    loadImages(){
-
+    lazyIframe() {
+        this.state.oneOpen = 'block';
     }
-
-    shouldComponentUpdate(nextProps,nextState){
-      return true;
-     }
 
     componentDidMount(){
         this.setState({
             projOpen:this.props.open
         });
+       console.log(this.progress); 
+      // this.lazyIframe();
+    window.addEventListener('focusin focus', function(e) {  
+        e.preventDefault();
+        // add custom scroll code if you want
+    })
+       //this.progress.current.focus({preventScroll:true});
     }
 
     render(){
@@ -39,7 +63,8 @@ class ComputerScience extends React.Component{
             <div id = "head-bottom" style={{position: 'fixed', zIndex:'3', right:'30px', left: '30px', bottom:'0', background: 'rgba(255, 255, 255)', height:'30px'}}></div>
             <img className="project-header-img" src="https://kathrynhuff.com/assets/cs_prev.jpg"></img>
             <div style= {{position: 'relative', backgroundColor: 'rgba(13, 32, 5, 0.918)', width: '100vw', height: '100vh', display: 'block', zIndex: '1', position: 'fixed'}}></div>
-            <div className = "csContent" ref = {this.refs.projContent} style= {{width: '100vw', height: '100vh'}}></div></div>
+            <div className = "csContent" ref = {this.refs.projContent} style= {{width: '100vw', height: '100vh'}}></div>
+           </div>
         }
         else if (this.props.open) {return<div id = "computer-science">
             <div id = "head-top" style={{top:'0px',position: 'fixed', zIndex:'2', background: 'rgba(255, 255, 255)', height:'30px', width:'100%'}} ></div>
@@ -63,7 +88,7 @@ class ComputerScience extends React.Component{
                     </div>
                     <div className= "mobileAuto" style= {{position: 'relative', backgroundColor: '#FFF', width: '100vw', height: '45vw', display: 'block', zIndex: '1'}}>
                         <div className= "mobileFullPad" style = {{paddingTop: '5vw', width: '60vw', marginLeft: '3vw', display: 'inline-block'}}>
-                        <iframe className= "mobileAuto" style = {{width: '100%', border:'none', height: '32.2vw', boxShadow: '3px 3px 9px grey'}}src="https://xd.adobe.com/embed/df562759-241f-4d09-66f0-05ea28114d32-a967/"></iframe>
+                        <LazyLoad unmountIfInvisible = "true"><embed ref = {this.progress} className= "mobileAuto" style = {{ display: 'block', width: '100%', border:'none', height: '33.8vw', boxShadow: '3px 3px 9px grey'}}src="https://xd.adobe.com/embed/df562759-241f-4d09-66f0-05ea28114d32-a967/"></embed></LazyLoad>
                         </div>
                         <div className= "mobileFullPad" style = {{position: 'absolute', paddingTop: '10vw', width: '37vw', display: 'inline-block'}}>
                             <h1 style= {{marginLeft: '3vw', color: '#5A2727', lineHeight:"0em", textAlign:'left', paddingRight:'40px'}}>Landing Page/</h1>
@@ -76,7 +101,7 @@ class ComputerScience extends React.Component{
                     </div>
                     <div style= {{paddingLeft: '2vw', paddingRight: '2vw',paddingBottom: '5vw',backgroundColor: '#FFF', width: '96vw', height: 'auto', display: 'block', zIndex: '1'}}>
                         <div className= "mobileFullPad" style = {{paddingTop: '5vw', width: '50vw', marginLeft: '3vw', display: 'inline-block'}}>
-                            <iframe className= "mobileAuto" style = {{width: '100%', border:'none', height: '28.2vw', boxShadow: '3px 3px 9px grey'}}src="https://xd.adobe.com/embed/df562759-241f-4d09-66f0-05ea28114d32-a967/screen/a824e8ed-81b8-4b0d-8126-91664ebbd68a/Article-Template"></iframe>
+                        <LazyLoad unmountIfInvisible = "true"><embed className= "mobileAuto" style = {{display: 'grid', width: '100%', border:'none', height: '28.2vw', boxShadow: '3px 3px 9px grey'}}src="https://xd.adobe.com/embed/df562759-241f-4d09-66f0-05ea28114d32-a967/screen/a824e8ed-81b8-4b0d-8126-91664ebbd68a/Article-Template"></embed></LazyLoad>
                         </div>
                         <div className= "mobileFullPad" style = {{width: '30vw', height:'auto', marginLeft: '2vw', marginTop: '6vw', display: 'inline-block', verticalAlign: 'top'}}>   
                             <h1 style= {{color: '#5A2727', lineHeight:"0em"}}> Article</h1>
@@ -94,19 +119,20 @@ class ComputerScience extends React.Component{
                             <p className= "mobileFull" style= {{float: 'right', color: '#707070',marginTop: '30px', width: '75%', contentAlign: 'right', display: 'block', textAlign: 'right'}}>The faculty page redesign is a cleaner version of the current faculty template, and contains links to articles that mention the current faculty member.</p>
                         </div> 
                         <div className= "mobileFullPad" style = {{paddingTop: '5vw', width: '50vw', marginLeft: '3vw', display: 'inline-block'}}>
-                            <iframe className= "mobileAuto" className = "frame" style = {{width: '100%', border:'none', height: '28.2vw', boxShadow: '3px 3px 9px grey'}}src="https://xd.adobe.com/embed/df562759-241f-4d09-66f0-05ea28114d32-a967/screen/c021d3e2-9901-45ad-aa43-c33a9b7a5a7e/Faculty-Template"></iframe>
+                        <LazyLoad unmountIfInvisible = "true"><embed className= "mobileAuto" onFocus={window.scrollTo(0, 0)} style = {{display: 'table', width: '100%', border:'none', height: '28.2vw', boxShadow: '3px 3px 9px grey'}}src="https://xd.adobe.com/embed/df562759-241f-4d09-66f0-05ea28114d32-a967/screen/c021d3e2-9901-45ad-aa43-c33a9b7a5a7e/Faculty-Template"></embed></LazyLoad>
                         </div>
                     </div>
                     <div className= "mobileAuto" style= {{padding: '5vw', backgroundColor: '#0B1C03EE', width: '90vw', height: '40vw', display: 'block', zIndex: '1'}}>
                         <h1 style= {{color: '#EA9B70', margin:'auto', display: 'block', textAlign: 'center'}}> Menu Templates</h1>
                         <p className= "mobileFullPad" style= {{color: '#eee',  margin:'auto', marginTop: '30px', width: '25%', contentAlign: 'right', display: 'block', textAlign: 'left'}}>The menu template is a multi-purpose template for page trees that benefit from a visual structure of links to direct the user.</p>
-                        <iframe  style = {{margin: '2.5vw', width: '40vw', border:'none', height: '22.8vw', boxShadow: '3px 3px 9px black'}}src="https://xd.adobe.com/embed/df562759-241f-4d09-66f0-05ea28114d32-a967/screen/3c3a5e99-ea19-4ae2-a2f0-f009d4a50d6c/Education-Template"></iframe>
-                        <iframe style = {{margin: '2.5vw', width: '40vw', border:'none', height: '22.8vw', boxShadow: '3px 3px 9px black'}}src="https://xd.adobe.com/embed/df562759-241f-4d09-66f0-05ea28114d32-a967/screen/44d1c552-cfbf-47f0-a9a5-2b236370446c/Admissions-Template"></iframe>
+                        <LazyLoad unmountIfInvisible = "true"><embed  onFocus={window.scrollTo(0, 0)} style = {{display: 'inline-table', margin: '2.5vw', width: '40vw', border:'none', height: '22.8vw', boxShadow: '3px 3px 9px black'}}src="https://xd.adobe.com/embed/df562759-241f-4d09-66f0-05ea28114d32-a967/screen/3c3a5e99-ea19-4ae2-a2f0-f009d4a50d6c/Education-Template"></embed></LazyLoad>
+                        <LazyLoad unmountIfInvisible = "true"><embed onFocus={window.scrollTo(0, 0)} style = {{display: 'inline-table', margin: '2.5vw', width: '40vw', border:'none', height: '22.8vw', boxShadow: '3px 3px 9px black'}}src="https://xd.adobe.com/embed/df562759-241f-4d09-66f0-05ea28114d32-a967/screen/44d1c552-cfbf-47f0-a9a5-2b236370446c/Admissions-Template"></embed></LazyLoad>
                     </div>
                 </div>
             </div>
         }
     }
+    
 }
 
 export default ComputerScience

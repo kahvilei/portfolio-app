@@ -17,7 +17,7 @@ class About extends Component {
               <div style = {{textAlign: 'left', display: 'block'}}>
                 <h2 style = {{display: 'block'}}>About Me</h2>
                 <p style = {{display: 'block'}}>Hello, I’m a recent graduate of the University of Texas at Dallas with a Bachelors in Arts & Technology and a minor in Computer Science. I work part-time as a web designer and a freelance illustrator.</p>
-                <h4 style = {{color: 'rgb(187, 106, 106)', display: 'block'}}>Contact & More Info</h4>
+                <h4 style = {{color: '#000', display: 'block'}}>Contact & More Info</h4>
                 <a href = "mailto:kat@kathrynhuff.com"><i data-aos="fade-up" data-aos-delay="50"style={{color: 'rgb(187, 106, 106)', position: 'relative', display:'inline-block', padding: '2%'}}className="far fa-envelope-open"></i></a>
                 <a href = "https://www.artstation.com/katvile"><i data-aos="fade-up" data-aos-delay="150"style={{color: 'rgb(187, 106, 106)', position: 'relative', display:'inline-block', padding: '2%'}}className="fab fa-artstation"></i></a>
                 <a href = "mailto:kat@kathrynhuff.com"><i data-aos="fade-up" data-aos-delay="250"style={{color: 'rgb(187, 106, 106)', position: 'relative', display:'inline-block', padding: '2%'}}className="fab fa-linkedin"></i></a>

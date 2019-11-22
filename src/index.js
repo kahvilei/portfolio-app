@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter as Router, HashRouter} from 'react-router-dom';
+import {StaticRouter, BrowserRouter as Router, HashRouter} from 'react-router-dom';
 import { createBrowserHistory } from "history";
 import './index.css';
 import App from './App';
@@ -13,7 +13,13 @@ const clientRender = () => {
 };
 
 
-const serverRender = () => {};
+const serverRender = () => {
+    const context = {};
+    ReactDOM.render(
+    <StaticRouter context={context}>
+      <App />
+    </StaticRouter>, document.getElementById('root'));
+};
 
 if (typeof window === 'object') {
     clientRender();
